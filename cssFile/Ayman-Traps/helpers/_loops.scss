@@ -1,0 +1,96 @@
+@for $i from 1 to 65{
+  .text-px-#{$i}{
+    font-size: #{$i}px !important;
+  }
+}
+
+@for $i from 0 to 1001{ 
+  .w-#{$i}{
+    width: #{$i}px  !important;
+  }
+  .h-#{$i}{
+    height: #{$i}px !important;
+  }
+}
+
+$grid_cols: 12;
+
+@for $i from 1 through $grid_cols {
+  .col-#{$i}{
+    width:  percentage($i / $grid_cols)  !important ;
+  }
+}
+
+
+@for $i from 1 through 101 {
+  .pr-#{$i}{
+    padding-right: #{$i}px !important;
+  }
+}
+@for $i from 1 through 101 {
+  .pl-#{$i}{
+    padding-left: #{$i}px !important;
+  }
+}
+@for $i from 1 through 101 {
+  .pb-#{$i}{
+    padding-bottom: #{$i}px !important;
+  }
+}
+@for $i from 1 through 101 {
+  .pt-#{$i}{
+    padding-top: #{$i}px !important;
+  }
+}
+
+@for $i from 1 through 101 {
+  .mr-#{$i}{
+    margin-right: #{$i}px !important;
+  }
+}
+@for $i from 1 through 101 {
+  .ml-#{$i}{
+    margin-left: #{$i}px !important;
+  }
+}
+@for $i from 1 through 101 {
+  .mb-#{$i}{
+    margin-bottom: #{$i}px !important;
+  }
+}
+@for $i from 1 through 101 {
+  .mt-#{$i}{
+    margin-top: #{$i}px !important;
+  }
+}
+
+
+
+
+@for $i from 1 to 1000 {
+  .top-#{$i}-px{
+    top: #{$i}px;
+  }
+}
+@for $i from 1 to 1000 {
+  .left-#{$i}-px{
+    left: #{$i}px;
+  }
+}
+@for $i from 1 to 1000 {
+  .right-#{$i}-px{
+    right: #{$i}px;
+  }
+}
+@for $i from 1 to 1000 {
+  .bottom-#{$i}-px{
+    bottom: #{$i}px;
+  }
+}
+
+
+@for $i from 1 to 300 {
+  .grid-#{$i}-px{
+    grid-template-columns: repeat(auto-fill, minmax(#{$i}, 1fr));
+  }
+}

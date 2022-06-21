@@ -1,0 +1,10 @@
+$colors: red, green,blue,black,white,brown,yellow,gray,violet,pink,orange,gold,teal,cyan;
+
+@each $color in $colors {
+    .bg-#{$color}{
+        background-color: #{$color};
+    }
+    .text-#{$color}{
+        color: #{$color};
+    }
+}
